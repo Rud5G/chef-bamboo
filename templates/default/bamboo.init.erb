@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Bamboo Linux service controller script
+cd "/opt/atlassian/bamboo"
+
+case "$1" in
+    start)
+        ./bin/start-bamboo.sh
+        ;;
+    stop)
+        ./bin/stop-bamboo.sh
+        ;;
+    status)
+        ps awux | grep 'bamboo'
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
+
