@@ -132,7 +132,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.run_list = %w(
       role[base]
-      recipe[youwe-bamboo::servernode]
+      recipe[bamboo::bamboo]
     )
 
   end

@@ -16,24 +16,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# debug / build
-include_recipe 'bamboo::build'
-
-# platform settings
-platform = 'windows' if node['platform_family'] == 'windows'
-platform ||= 'linux'
-
-settings = Bamboo.settings(node)
-
-include_recipe 'bamboo::database' if settings['database']['host'] == 'localhost'
-include_recipe "bamboo::#{platform}_#{node['bamboo']['install_type']}"
-include_recipe 'bamboo::configuration'
-
-
-
-  #include_recipe 'bamboo::tomcat_configuration'
-  #include_recipe 'bamboo::apache2'
-
-
-

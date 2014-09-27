@@ -1,10 +1,10 @@
-name 'servernode'
-description 'Youwe servernode: Bamboo'
+name 'bamboo'
+description 'Youwe CI: Bamboo'
 
 # List of recipes and roles to apply.
 run_list(
   'role[base]',
-  'recipe[youwe-bamboo::servernode]'
+  'recipe[bamboo::bamboo]'
 )
 
 # Attributes applied if the node doesn't have it set already.

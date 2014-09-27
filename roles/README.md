@@ -7,8 +7,8 @@
 
 HOWTO Create roles:
 
-knife role from file roles/servernode.rb
 knife role from file roles/base.rb
+knife role from file roles/bamboo.rb
 
 
 

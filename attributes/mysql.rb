@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: youwe-bamboo
+# Cookbook Name:: bamboo
 # Attributes:: mysql
 #
 # Copyright (C) 2014
