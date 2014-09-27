@@ -1,0 +1,14 @@
+{
+    "id": "rudger",
+    "password": false,
+    "ssh_keys": [
+        ""
+    ],
+    "ssh_private_key": "",
+    "ssh_public_key": "",
+    "groups": [ "users" ],
+    "uid": 2001,
+    "gid": 2001,
+    "shell": "\/bin\/bash",
+    "comment": "Rudger Gravestein"
+}

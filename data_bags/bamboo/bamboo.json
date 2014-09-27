@@ -1,0 +1,61 @@
+{
+    "id": "bamboo",
+    "local": {
+        "database": {
+            "type": "mysql",
+            "host": "localhost",
+            "name": "bamboodb",
+            "user": "bamboouser",
+            "password": "bamboo_db_password1",
+            "port": 3306
+        },
+        "backup_client": {
+            "user": "root",
+            "password": "rootpass"
+        },
+        "tomcat": {
+            "keyAlias": "not_tomcat",
+            "keystoreFile": "/etc/pki/java/wildcard_cert.jks",
+            "keystorePass": "not_changeit"
+        }
+    },
+    "development": {
+        "database": {
+            "type": "mysql",
+            "host": "localhost",
+            "name": "bamboodb",
+            "user": "bamboouser",
+            "password": "bamboo_db_password2",
+            "port": 3306
+        },
+        "backup_client": {
+            "user": "root",
+            "password": "rootpass"
+        },
+        "tomcat": {
+            "keyAlias": "not_tomcat",
+            "keystoreFile": "/etc/pki/java/wildcard_cert.jks",
+            "keystorePass": "not_changeit"
+        }
+    },
+    "production": {
+        "database": {
+            "type": "mysql",
+            "host": "localhost",
+            "name": "bamboodb",
+            "user": "bamboouser",
+            "password": "bamboo_db_password3",
+            "port": 3306
+        },
+        "backup_client": {
+            "user": "root",
+            "password": "rootpass"
+        },
+        "tomcat": {
+            "keyAlias": "not_tomcat",
+            "keystoreFile": "/etc/pki/java/wildcard_cert.jks",
+            "keystorePass": "not_changeit"
+        }
+    }
+}
+
